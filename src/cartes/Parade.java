@@ -17,7 +17,7 @@ public class Parade extends Bataille {
 		case CREVAISON:
 			nomType = "Roue de secours";
 		case ACCIDENT:
-			nomType = "Reparations";
+			nomType = "Reparation";
 		
 		}
 		return nomType;
