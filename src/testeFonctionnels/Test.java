@@ -26,7 +26,7 @@ public class Test {
 		for(int i = 0; i < sabot.getNbCartes(); i++ ) {
 			
 			Carte carte = iter.next();
-			Carte c = sabot.piocher();
+			//Carte c = sabot.piocher();
 			System.out.println("Je pioche " + carte);
 		}
 		

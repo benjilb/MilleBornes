@@ -13,13 +13,16 @@ public class Attaque extends Bataille{
 		
 		case FEU:
 			nomType = "Feu rouge";
+			break;
 		case ESSENCE:
 			nomType = "Panne d'essence";
+			break;
 		case CREVAISON:
 			nomType = "Crevaison";
+			break;
 		case ACCIDENT:
 			nomType = "Accident";
-		
+			break;
 		}
 		return nomType;
 		

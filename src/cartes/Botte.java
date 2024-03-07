@@ -17,10 +17,13 @@ public class Botte extends Probleme {
 			break;
 		case ESSENCE:
 			nomType = "Citerne d'essence";
+			break;
 		case CREVAISON:
 			nomType = "Increvable";
+			break;
 		case ACCIDENT:
 			nomType = "As du volant";
+			break;
 
 		}
 		return nomType;

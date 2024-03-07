@@ -12,12 +12,16 @@ public class Parade extends Bataille {
 		
 		case FEU:
 			nomType = "Feu vert";
+			break;
 		case ESSENCE:
 			nomType = "Essence";
+			break;
 		case CREVAISON:
 			nomType = "Roue de secours";
+			break;
 		case ACCIDENT:
 			nomType = "Reparation";
+			break;
 		
 		}
 		return nomType;
