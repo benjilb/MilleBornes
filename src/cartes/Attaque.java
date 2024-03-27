@@ -27,4 +27,17 @@ public class Attaque extends Bataille{
 		return nomType;
 		
 	}
+
+	@Override
+	public boolean equals(Object objet){
+	    if (objet instanceof Attaque){
+	        Attaque attaque = (Attaque) objet;
+	        return type.equals(attaque.getType());
+	    }
+	    return false;
+	} 
+	
+	
+	
+	
 }

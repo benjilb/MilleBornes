@@ -1,4 +1,4 @@
-package cartes;
+package cartes; 
 
 public class Borne extends Carte {
 	private int km;
@@ -15,5 +15,12 @@ public class Borne extends Carte {
 	public String toString() {
 		return "km = " + km;
 	}
-
+	@Override
+	public boolean equals(Object objet){
+	    if (objet instanceof Borne){
+	        Borne borne = (Borne) objet;
+	        return km == borne.getKm();
+	    }
+	    return false;
+	} 
 }

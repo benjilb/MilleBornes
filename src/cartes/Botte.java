@@ -29,4 +29,13 @@ public class Botte extends Probleme {
 		return nomType;
 
 	}
+	
+	@Override
+	public boolean equals(Object objet){
+	    if (objet instanceof Botte){
+	        Botte botte = (Botte) objet;
+	        return type.equals(botte.getType());
+	    }
+	    return false;
+	} 
 }

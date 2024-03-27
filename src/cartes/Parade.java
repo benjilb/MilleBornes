@@ -27,4 +27,13 @@ public class Parade extends Bataille {
 		return nomType;
 		
 	}
+	
+	@Override
+	public boolean equals(Object objet){
+	    if (objet instanceof Parade){
+	        Parade parade = (Parade) objet;
+	        return type.equals(parade.getType());
+	    }
+	    return false;
+	} 
 }

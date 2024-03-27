@@ -4,6 +4,7 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+import cartes.Attaque;
 import cartes.Carte;
 
 public class Sabot implements Iterable<Carte> {
@@ -104,5 +105,7 @@ public class Sabot implements Iterable<Carte> {
 			return null;
 
 	}
+	
+	
 
 }

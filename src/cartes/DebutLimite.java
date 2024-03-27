@@ -6,5 +6,8 @@ public class DebutLimite extends Limite {
 		super(nombre);
 		// TODO Auto-generated constructor stub
 	}
+	public String toString() {
+		return "Debut Limite";
+	}
 
 }

@@ -1,10 +1,14 @@
 package cartes;
 
-public class FinLimite {
+public class FinLimite extends Limite {
 
-	public FinLimite() {
-		super();
+	public FinLimite(int nombre) {
+		super(nombre);
 		// TODO Auto-generated constructor stub
 	}
-
+	public String toString() {
+		return "Fin limite";
+	}
+	
 }
+
