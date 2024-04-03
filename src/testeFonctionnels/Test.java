@@ -67,5 +67,6 @@ public class Test {
         listeCartes = Utils.rassembler(listeCartes);
         System.out.println(listeCartes);
         System.out.println("liste rassemblée sans erreur ? " + Utils.verifierRassemblement(listeCartes));
+       
 	}
 }

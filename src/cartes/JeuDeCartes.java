@@ -18,6 +18,7 @@ public class JeuDeCartes {
                 this.listeCartes.add(carte);
             }
         }
+    	listeCartes = Utils.melanger(listeCartes);
     }
 
     public Carte[] getTypesDeCartes() {
@@ -27,19 +28,10 @@ public class JeuDeCartes {
     public List<Carte> getListeCartes() {
         return listeCartes;
     }
-    
-
-    
+   
     public boolean checkCount(Carte c,int nb) {
 		return (c.getNombre() == nb);
 		}
     
-    
-    public Carte[] melangerCartes(Carte[] listeC) {
-       
-        for (int i = listeCartes.size()-1 ; i > 0; i--) {
-        }
-        return listeC;
-    }
 
 }
