@@ -5,18 +5,24 @@ public abstract class Probleme extends Carte{
 		FEU, ESSENCE, CREVAISON, ACCIDENT;
 	}
 	protected Type type;
-	
-	
+
 	protected Probleme(int nombre, Type type) {
 		super(nombre);
 		this.type = type;
 	}
 
-
 	public Type getType() {
 		return type;
 	}
 	
+	@Override
+	public boolean equals(Object objet){
+		if(!super.equals(objet)) {
+			return false;
+		}
+	    Probleme probleme = (Probleme) objet;
+	    return getType() == probleme.getType();
+	} 
 	
 }
 

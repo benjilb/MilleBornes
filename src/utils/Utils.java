@@ -74,7 +74,6 @@ public class Utils {
 		return false;
 	}
 
-	
 	public static <T> boolean verifierRassemblement(List<T> liste) {
 		T precedent = liste.get(0);
 		T current;
@@ -85,14 +84,10 @@ public class Utils {
 				return false;
 			}
 			precedent = current;
-			
 		}
 		return true;
-		
-		
-
 	}
-
+/*
 	public static void main(String args[]) {
 		Utils test = new Utils();
 		List<Integer> tab = new ArrayList<>();
@@ -125,6 +120,6 @@ public class Utils {
 
 		System.out.println(test.verifierRassemblement(lst));
 		System.out.println(melanger(lst));
-	}
+	}*/
 
 }

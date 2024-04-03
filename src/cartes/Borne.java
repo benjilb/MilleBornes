@@ -17,10 +17,13 @@ public class Borne extends Carte {
 	}
 	@Override
 	public boolean equals(Object objet){
-	    if (objet instanceof Borne){
-	        Borne borne = (Borne) objet;
-	        return km == borne.getKm();
-	    }
-	    return false;
+		if(!super.equals(objet)) {
+			return false;
+		}
+	    Borne borne = (Borne) objet;
+	    return getKm() == borne.getKm();
+	  
 	} 
+	
+	
 }
