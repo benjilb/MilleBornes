@@ -3,11 +3,13 @@ package utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.Random;
+import java.util.Set;
 
 public class Utils {
 	private static Random random = new Random();
@@ -46,20 +48,17 @@ public class Utils {
 	}
 
 	public static <T> List<T> rassembler(List<T> liste) {
-		List<T> newArray = new ArrayList<T>();
+		List<T> newArray = new ArrayList<>();
 		for (int i = 0; i < liste.size(); i++) {
 			T elem = liste.get(i);
 			if (!newArray.contains(elem)) {
-				newArray.add(elem);
-				for (int j = i + 1; j < liste.size(); j++) {
-					T elemcourant = liste.get(j);
-					if (elem.equals(elemcourant)) {
-						newArray.add(elemcourant);
-					}
+			
+				int num = Collections.frequency(liste, elem);
+				//System.out.println("num frequency = " + num);
+				for (int j = 0; j < num; j++) {
+					newArray.add(elem);
 				}
 			} 
-			
-
 		}
 		return newArray;
 	}
@@ -87,7 +86,7 @@ public class Utils {
 		}
 		return true;
 	}
-/*
+
 	public static void main(String args[]) {
 		Utils test = new Utils();
 		List<Integer> tab = new ArrayList<>();
@@ -120,6 +119,6 @@ public class Utils {
 
 		System.out.println(test.verifierRassemblement(lst));
 		System.out.println(melanger(lst));
-	}*/
+	}
 
 }

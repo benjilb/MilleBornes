@@ -22,7 +22,6 @@ public class Sabot implements Iterable<Carte> {
 
 	public boolean estVide() {
 		return nbCartes != 0;
-
 	}
 
 	private void ajouterCarte(Carte carte) throws ArrayIndexOutOfBoundsException {

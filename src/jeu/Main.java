@@ -6,6 +6,6 @@ import cartes.Carte;
 
 public interface Main {
 	void prendre(Carte c);
-	void joueur(Carte c);
+	void jouer(Carte c);
 	Iterator<Carte> Iterateur();
 }
